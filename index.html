@@ -1,194 +1,716 @@
-
-<h2 class="sr-only">ZW Vizualz impact dashboard for STU Football showing 68 videos produced from August 2024 to 2026 driving 1.85 million accounts reached and massive engagement growth.</h2>
-
-<style>
-  * { box-sizing: border-box; }
-  .header { background: #042C53; border-radius: var(--border-radius-lg); padding: 24px 20px 20px; margin-bottom: 16px; }
-  .header-top { display: flex; align-items: center; gap: 14px; margin-bottom: 6px; }
-  .avatar { width: 48px; height: 48px; border-radius: 50%; background: #E24B4A; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 500; color: #FCEBEB; flex-shrink: 0; }
-  .header-name { font-size: 20px; font-weight: 500; color: #E6F1FB; margin: 0; }
-  .header-handle { font-size: 13px; color: #85B7EB; margin: 2px 0 0; }
-  .header-tag { display: inline-block; background: #E24B4A; color: #FCEBEB; font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: var(--border-radius-md); margin-top: 10px; }
-  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 16px; }
-  .kpi { border-radius: var(--border-radius-md); padding: 12px 14px; }
-  .kpi-blue { background: #E6F1FB; }
-  .kpi-red { background: #FCEBEB; }
-  .kpi-dark { background: #042C53; }
-  .kpi-label { font-size: 11px; margin-bottom: 4px; }
-  .kpi-blue .kpi-label { color: #185FA5; }
-  .kpi-red .kpi-label { color: #A32D2D; }
-  .kpi-dark .kpi-label { color: #85B7EB; }
-  .kpi-value { font-size: 24px; font-weight: 500; }
-  .kpi-blue .kpi-value { color: #042C53; }
-  .kpi-red .kpi-value { color: #501313; }
-  .kpi-dark .kpi-value { color: #E6F1FB; }
-  .kpi-sub { font-size: 11px; margin-top: 2px; }
-  .kpi-blue .kpi-sub { color: #185FA5; }
-  .kpi-red .kpi-sub { color: #A32D2D; }
-  .kpi-dark .kpi-sub { color: #85B7EB; }
-  .section { margin-bottom: 1.5rem; }
-  .section-title { font-size: 12px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
-  .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 1.2rem 0; }
-  .before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 1rem; }
-  .ba-card { border-radius: var(--border-radius-md); padding: 12px 14px; }
-  .ba-before { background: #D3D1C7; }
-  .ba-after { background: #042C53; }
-  .ba-label { font-size: 11px; font-weight: 500; margin-bottom: 8px; }
-  .ba-before .ba-label { color: #444441; }
-  .ba-after .ba-label { color: #85B7EB; }
-  .ba-stat { font-size: 13px; margin: 4px 0; }
-  .ba-before .ba-stat { color: #2C2C2A; }
-  .ba-after .ba-stat { color: #B5D4F4; }
-  .ba-big { font-size: 22px; font-weight: 500; }
-  .ba-before .ba-big { color: #444441; }
-  .ba-after .ba-big { color: #E6F1FB; }
-  .milestone { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 0.5px solid var(--color-border-tertiary); }
-  .milestone:last-child { border-bottom: none; }
-  .milestone-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
-  .milestone-date { font-size: 12px; color: var(--color-text-secondary); min-width: 70px; }
-  .milestone-text { font-size: 13px; color: var(--color-text-primary); }
-  .milestone-num { font-size: 13px; font-weight: 500; }
-  .tab-row { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
-  .tab { padding: 5px 12px; font-size: 13px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-secondary); background: transparent; color: var(--color-text-secondary); cursor: pointer; }
-  .tab.active { background: #042C53; color: #E6F1FB; border-color: #042C53; font-weight: 500; }
-  @media(max-width:480px){ .before-after { grid-template-columns: 1fr; } }
-</style>
-
-<div style="padding:0.5rem 0;">
-
-<div class="header">
-  <div class="header-top">
-    <div class="avatar">ZW</div>
-    <div>
-      <p class="header-name">ZW Vizualz</p>
-      <p class="header-handle">@z.w_vizualz</p>
-    </div>
-  </div>
-  <div class="header-tag">STU Football — Impact Report · Aug 2024 – Apr 2026</div>
-</div>
-
-<div class="kpi-grid">
-  <div class="kpi kpi-red">
-    <div class="kpi-label">Videos produced</div>
-    <div class="kpi-value">68</div>
-    <div class="kpi-sub">Football Reels</div>
-  </div>
-  <div class="kpi kpi-blue">
-    <div class="kpi-label">Accounts reached</div>
-    <div class="kpi-value">1.85M</div>
-    <div class="kpi-sub">since Aug 2024</div>
-  </div>
-  <div class="kpi kpi-dark">
-    <div class="kpi-label">Impressions generated</div>
-    <div class="kpi-value">2.5M+</div>
-    <div class="kpi-sub">Aug 2024 – Apr 2026</div>
-  </div>
-  <div class="kpi kpi-red">
-    <div class="kpi-label">Follower growth</div>
-    <div class="kpi-value">+67%</div>
-    <div class="kpi-sub">4,500 → 7,512</div>
-  </div>
-  <div class="kpi kpi-blue">
-    <div class="kpi-label">Reel interactions</div>
-    <div class="kpi-value">20K+</div>
-    <div class="kpi-sub">+810% vs before</div>
-  </div>
-  <div class="kpi kpi-dark">
-    <div class="kpi-label">Peak month reach</div>
-    <div class="kpi-value">247K</div>
-    <div class="kpi-sub">Nov 2025</div>
-  </div>
-</div>
-
-<hr class="divider">
-<div class="section">
-  <div class="section-title">Before vs after — ZW Vizualz joins Aug 2024</div>
-  <div class="before-after">
-    <div class="ba-card ba-before">
-      <div class="ba-label">Before (full year 2023)</div>
-      <div class="ba-big">66K</div>
-      <div class="ba-stat">total impressions</div>
-      <div class="ba-stat">54K accounts reached</div>
-      <div class="ba-stat">~0 reel interactions</div>
-      <div class="ba-stat">162 shares all year</div>
-    </div>
-    <div class="ba-card ba-after">
-      <div class="ba-label">After (2024 season alone)</div>
-      <div class="ba-big" style="color:#E24B4A;">987K</div>
-      <div class="ba-stat">total impressions</div>
-      <div class="ba-stat">693K accounts reached</div>
-      <div class="ba-stat">8,215 shares</div>
-      <div class="ba-stat">14.7× growth in one year</div>
-    </div>
-  </div>
-</div>
-
-<hr class="divider">
-<div class="section">
-  <div class="section-title">Monthly impressions — the ZW Vizualz era</div>
-  <div class="tab-row">
-    <button class="tab active" onclick="switchChart('impressions', this)">Impressions</button>
-    <button class="tab" onclick="switchChart('reach', this)">Reach</button>
-    <button class="tab" onclick="switchChart('shares', this)">Shares</button>
-  </div>
-  <div style="position:relative;width:100%;height:300px;">
-    <canvas id="mainC" role="img" aria-label="Monthly STU Football metrics from August 2024 to April 2026 showing sustained high performance driven by ZW Vizualz video content">Monthly metrics Aug 2024 to Apr 2026.</canvas>
-  </div>
-</div>
-
-<hr class="divider">
-<div class="section">
-  <div class="section-title">Year-over-year — the full picture</div>
-  <div style="position:relative;width:100%;height:240px;">
-    <canvas id="yoyC" role="img" aria-label="Year over year impressions and reach for STU Football 2023 2024 2025">Year over year comparison.</canvas>
-  </div>
-</div>
-
-<hr class="divider">
-<div class="section">
-  <div class="section-title">Growth milestones</div>
-  <div class="milestone">
-    <div class="milestone-dot" style="background:#B4B2A9;"></div>
-    <div class="milestone-date">Aug 2023</div>
-    <div class="milestone-text">Account averaging <span class="milestone-num">1.9K impressions/month</span> — purely local following</div>
-  </div>
-  <div class="milestone">
-    <div class="milestone-dot" style="background:#B4B2A9;"></div>
-    <div class="milestone-date">Nov 2023</div>
-    <div class="milestone-text">First spike — playoff run pushes to <span class="milestone-num">38K impressions</span>, but doesn't sustain</div>
-  </div>
-  <div class="milestone">
-    <div class="milestone-dot" style="background:#E24B4A;"></div>
-    <div class="milestone-date">Aug 2024</div>
-    <div class="milestone-text" style="font-weight:500;">ZW Vizualz arrives — first month hits <span class="milestone-num" style="color:#E24B4A;">132K impressions</span> and 94K accounts reached</div>
-  </div>
-  <div class="milestone">
-    <div class="milestone-dot" style="background:#185FA5;"></div>
-    <div class="milestone-date">Sep 2024</div>
-    <div class="milestone-text">Peak single month — <span class="milestone-num">331K impressions</span>, 231K accounts reached</div>
-  </div>
-  <div class="milestone">
-    <div class="milestone-dot" style="background:#185FA5;"></div>
-    <div class="milestone-date">Oct 2024</div>
-    <div class="milestone-text">Shares explode — <span class="milestone-num">4,119 shares</span> in one month vs 162 all of 2023</div>
-  </div>
-  <div class="milestone">
-    <div class="milestone-dot" style="background:#185FA5;"></div>
-    <div class="milestone-date">2025 season</div>
-    <div class="milestone-text">Growth sustains and compounds — <span class="milestone-num">1.05M impressions</span> in season alone, followers hit 7,512</div>
-  </div>
-  <div class="milestone">
-    <div class="milestone-dot" style="background:#0F6E56;"></div>
-    <div class="milestone-date">Nov 2025</div>
-    <div class="milestone-text">All-time peak — <span class="milestone-num">352K impressions</span> and 247K accounts reached in a single month</div>
-  </div>
-</div>
-
-</div>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZW Vizualz — STU Impact</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+  :root {
+    --blue: #0A2E5C;
+    --blue-mid: #185FA5;
+    --blue-light: #3A8FE8;
+    --red: #C8102E;
+    --red-bright: #E8193A;
+    --red-glow: rgba(200,16,46,0.18);
+    --blue-glow: rgba(24,95,165,0.18);
+    --white: #F5F7FA;
+    --off: #E8ECF2;
+    --dark: #070D18;
+    --dark2: #0D1929;
+    --dark3: #111E33;
+    --gray: #8A9AB5;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+    --font-mono: 'DM Mono', monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--dark);
+    color: var(--white);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 40px;
+    background: rgba(7,13,24,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .nav-logo {
+    font-family: var(--font-display);
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: var(--white);
+  }
+  .nav-logo span { color: var(--red-bright); }
+  .nav-links { display: flex; gap: 32px; }
+  .nav-links a {
+    font-size: 13px; font-weight: 500; color: var(--gray);
+    text-decoration: none; letter-spacing: 0.5px;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--white); }
+  .nav-cta {
+    background: var(--red); color: var(--white) !important;
+    padding: 8px 20px; border-radius: 4px;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--red-bright) !important; color: var(--white) !important; }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 120px 40px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 50%, rgba(200,16,46,0.12) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 60% at 10% 60%, rgba(24,95,165,0.15) 0%, transparent 70%);
+  }
+  .hero-grid {
+    position: absolute; inset: 0; opacity: 0.04;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .hero-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 12px; letter-spacing: 3px;
+    color: var(--red-bright);
+    margin-bottom: 20px;
+    opacity: 0; animation: fadeUp 0.8s 0.2s forwards;
+  }
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(72px, 12vw, 160px);
+    line-height: 0.9;
+    letter-spacing: 2px;
+    color: var(--white);
+    opacity: 0; animation: fadeUp 0.8s 0.35s forwards;
+  }
+  .hero-title .red { color: var(--red-bright); }
+  .hero-title .blue { color: var(--blue-light); }
+  .hero-sub {
+    font-size: 18px; font-weight: 300; color: var(--gray);
+    margin-top: 28px; max-width: 520px; line-height: 1.7;
+    opacity: 0; animation: fadeUp 0.8s 0.5s forwards;
+  }
+  .hero-stats {
+    display: flex; gap: 48px; margin-top: 56px; flex-wrap: wrap;
+    opacity: 0; animation: fadeUp 0.8s 0.65s forwards;
+  }
+  .hero-stat-num {
+    font-family: var(--font-display);
+    font-size: 52px; line-height: 1;
+    color: var(--white);
+  }
+  .hero-stat-num .unit { font-size: 32px; color: var(--red-bright); }
+  .hero-stat-label {
+    font-size: 12px; color: var(--gray);
+    letter-spacing: 1px; margin-top: 4px;
+    text-transform: uppercase;
+  }
+  .hero-divider { width: 1px; background: rgba(255,255,255,0.1); }
+  .hero-cta {
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-top: 48px;
+    padding: 16px 36px;
+    background: var(--red);
+    color: var(--white); font-weight: 500; font-size: 14px;
+    text-decoration: none; border-radius: 4px;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, transform 0.15s;
+    opacity: 0; animation: fadeUp 0.8s 0.8s forwards;
+  }
+  .hero-cta:hover { background: var(--red-bright); transform: translateY(-2px); }
+  .hero-scroll {
+    position: absolute; bottom: 40px; left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px; letter-spacing: 3px; color: var(--gray);
+    text-transform: uppercase;
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    opacity: 0; animation: fadeUp 0.8s 1.1s forwards;
+  }
+  .scroll-line {
+    width: 1px; height: 40px;
+    background: linear-gradient(to bottom, var(--red-bright), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+
+  /* SECTIONS */
+  section { padding: 100px 40px; max-width: 1200px; margin: 0 auto; }
+  .section-full { max-width: 100%; padding: 100px 40px; }
+
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 11px; letter-spacing: 4px; color: var(--red-bright);
+    text-transform: uppercase; margin-bottom: 16px;
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1; letter-spacing: 1px;
+    color: var(--white);
+    margin-bottom: 48px;
+  }
+
+  /* IMPACT NUMBERS */
+  .impact-bg {
+    background: var(--dark2);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2px;
+  }
+  .impact-card {
+    background: var(--dark3);
+    padding: 40px 32px;
+    position: relative; overflow: hidden;
+    transition: background 0.3s;
+  }
+  .impact-card:hover { background: #152035; }
+  .impact-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--red);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.4s;
+  }
+  .impact-card:hover::before { transform: scaleX(1); }
+  .impact-num {
+    font-family: var(--font-display);
+    font-size: 56px; line-height: 1;
+    color: var(--white);
+  }
+  .impact-num .accent { color: var(--red-bright); }
+  .impact-label {
+    font-size: 13px; color: var(--gray);
+    margin-top: 8px; letter-spacing: 0.3px;
+  }
+  .impact-delta {
+    display: inline-block;
+    margin-top: 12px;
+    font-family: var(--font-mono);
+    font-size: 11px; font-weight: 500;
+    color: #4ADE80;
+    background: rgba(74,222,128,0.1);
+    padding: 3px 8px; border-radius: 3px;
+  }
+
+  /* BEFORE / AFTER */
+  .ba-wrap {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 3px;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px; overflow: hidden;
+  }
+  .ba-side { padding: 48px 40px; }
+  .ba-before { background: #0D1420; }
+  .ba-after { background: #0D1929; }
+  .ba-badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 10px; letter-spacing: 2px;
+    padding: 4px 12px; border-radius: 2px;
+    margin-bottom: 28px;
+  }
+  .ba-before .ba-badge { background: rgba(138,154,181,0.15); color: var(--gray); }
+  .ba-after .ba-badge { background: rgba(200,16,46,0.2); color: var(--red-bright); }
+  .ba-big {
+    font-family: var(--font-display);
+    font-size: 80px; line-height: 1;
+    color: var(--white);
+  }
+  .ba-after .ba-big { color: var(--red-bright); }
+  .ba-unit { font-size: 48px; }
+  .ba-desc { font-size: 14px; color: var(--gray); margin-top: 8px; }
+  .ba-list { margin-top: 28px; display: flex; flex-direction: column; gap: 12px; }
+  .ba-item {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-size: 13px;
+  }
+  .ba-item-label { color: var(--gray); }
+  .ba-item-val { color: var(--white); font-weight: 500; }
+  .ba-after .ba-item-val { color: var(--blue-light); }
+
+  /* CHART SECTION */
+  .chart-section { background: var(--dark2); }
+  .chart-tabs {
+    display: flex; gap: 4px; margin-bottom: 32px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding-bottom: 0;
+  }
+  .chart-tab {
+    padding: 12px 24px;
+    font-size: 13px; font-weight: 500;
+    color: var(--gray); background: transparent;
+    border: none; cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.2s, border-color 0.2s;
+    font-family: var(--font-body);
+  }
+  .chart-tab.active { color: var(--white); border-bottom-color: var(--red-bright); }
+  .chart-tab:hover { color: var(--white); }
+  .chart-wrap { position: relative; width: 100%; height: 360px; }
+
+  /* TIMELINE */
+  .timeline { position: relative; padding-left: 32px; }
+  .timeline::before {
+    content: '';
+    position: absolute; left: 8px; top: 8px; bottom: 8px;
+    width: 1px; background: rgba(255,255,255,0.1);
+  }
+  .tl-item {
+    position: relative; margin-bottom: 40px;
+    opacity: 0; transform: translateX(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  .tl-item.visible { opacity: 1; transform: translateX(0); }
+  .tl-dot {
+    position: absolute; left: -28px; top: 4px;
+    width: 12px; height: 12px; border-radius: 50%;
+    border: 2px solid var(--gray);
+    background: var(--dark);
+  }
+  .tl-item.highlight .tl-dot {
+    background: var(--red-bright);
+    border-color: var(--red-bright);
+    box-shadow: 0 0 12px rgba(232,25,58,0.5);
+  }
+  .tl-item.peak .tl-dot {
+    background: var(--blue-light);
+    border-color: var(--blue-light);
+    box-shadow: 0 0 12px rgba(58,143,232,0.5);
+  }
+  .tl-date {
+    font-family: var(--font-mono);
+    font-size: 11px; color: var(--gray);
+    letter-spacing: 2px; margin-bottom: 6px;
+  }
+  .tl-item.highlight .tl-date { color: var(--red-bright); }
+  .tl-item.peak .tl-date { color: var(--blue-light); }
+  .tl-title { font-size: 16px; font-weight: 500; color: var(--white); margin-bottom: 4px; }
+  .tl-desc { font-size: 14px; color: var(--gray); line-height: 1.6; }
+  .tl-num { color: var(--white); font-weight: 500; }
+
+  /* YOY */
+  .yoy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 48px; }
+  .yoy-card {
+    border-radius: 8px; padding: 28px 24px;
+    border: 1px solid rgba(255,255,255,0.06);
+    position: relative; overflow: hidden;
+  }
+  .yoy-year {
+    font-family: var(--font-display);
+    font-size: 48px; line-height: 1;
+    margin-bottom: 16px;
+  }
+  .yoy-card:nth-child(1) .yoy-year { color: var(--gray); }
+  .yoy-card:nth-child(2) .yoy-year { color: var(--blue-light); }
+  .yoy-card:nth-child(3) .yoy-year { color: var(--red-bright); }
+  .yoy-card:nth-child(2) { border-color: rgba(58,143,232,0.3); background: rgba(24,95,165,0.08); }
+  .yoy-card:nth-child(3) { border-color: rgba(200,16,46,0.3); background: rgba(200,16,46,0.06); }
+  .yoy-stat { margin-bottom: 10px; }
+  .yoy-stat-label { font-size: 11px; color: var(--gray); letter-spacing: 1px; text-transform: uppercase; }
+  .yoy-stat-val { font-size: 22px; font-weight: 500; color: var(--white); margin-top: 2px; }
+  .yoy-tag {
+    position: absolute; top: 20px; right: 20px;
+    font-family: var(--font-mono); font-size: 10px;
+    padding: 3px 8px; border-radius: 2px;
+  }
+  .yoy-card:nth-child(1) .yoy-tag { background: rgba(138,154,181,0.1); color: var(--gray); }
+  .yoy-card:nth-child(2) .yoy-tag { background: rgba(58,143,232,0.15); color: var(--blue-light); }
+  .yoy-card:nth-child(3) .yoy-tag { background: rgba(200,16,46,0.15); color: var(--red-bright); }
+
+  /* CONTACT */
+  .contact-section {
+    background: var(--dark2);
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .contact-inner {
+    max-width: 700px; margin: 0 auto;
+    text-align: center; padding: 100px 40px;
+  }
+  .contact-title {
+    font-family: var(--font-display);
+    font-size: clamp(52px, 8vw, 96px);
+    line-height: 0.95; letter-spacing: 2px;
+    color: var(--white); margin-bottom: 20px;
+  }
+  .contact-title .red { color: var(--red-bright); }
+  .contact-sub { font-size: 16px; color: var(--gray); line-height: 1.7; margin-bottom: 40px; }
+  .contact-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 16px 36px;
+    background: var(--red); color: var(--white);
+    font-size: 14px; font-weight: 500;
+    text-decoration: none; border-radius: 4px;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .btn-primary:hover { background: var(--red-bright); transform: translateY(-2px); }
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 16px 36px;
+    background: transparent; color: var(--white);
+    font-size: 14px; font-weight: 500;
+    text-decoration: none; border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: border-color 0.2s, transform 0.15s;
+  }
+  .btn-secondary:hover { border-color: var(--white); transform: translateY(-2px); }
+
+  /* FOOTER */
+  footer {
+    padding: 32px 40px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    font-size: 13px; color: var(--gray);
+  }
+  footer span { color: var(--red-bright); }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    nav { padding: 16px 20px; }
+    .nav-links { display: none; }
+    .hero { padding: 100px 20px 60px; }
+    section { padding: 70px 20px; }
+    .ba-wrap { grid-template-columns: 1fr; }
+    .yoy-grid { grid-template-columns: 1fr; }
+    .hero-stats { gap: 28px; }
+    footer { flex-direction: column; gap: 8px; text-align: center; }
+    .contact-inner { padding: 70px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">ZW<span>.</span>VIZUALZ</div>
+  <div class="nav-links">
+    <a href="#impact">Impact</a>
+    <a href="#growth">Growth</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#contact" class="nav-cta">Work with me</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div style="position:relative; z-index:1; max-width:1200px; margin:0 auto; width:100%;">
+    <p class="hero-eyebrow">// STU Athletics · Aug 2024 — 2026</p>
+    <h1 class="hero-title">
+      68<span class="red">.</span><br>
+      VIDEOS<span class="blue">.</span><br>
+      1.85M<span class="red"> REACHED.</span>
+    </h1>
+    <p class="hero-sub">One videographer joined STU Football in August 2024. What happened next changed the program's entire digital presence forever.</p>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">987<span class="unit">K</span></div>
+        <div class="hero-stat-label">Impressions · 2024 season</div>
+      </div>
+      <div class="hero-divider"></div>
+      <div>
+        <div class="hero-stat-num">+<span class="unit">67</span>%</div>
+        <div class="hero-stat-label">Follower growth</div>
+      </div>
+      <div class="hero-divider"></div>
+      <div>
+        <div class="hero-stat-num">34<span class="unit">×</span></div>
+        <div class="hero-stat-label">More reach vs 2023</div>
+      </div>
+    </div>
+    <a href="#impact" class="hero-cta">See the full impact ↓</a>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    scroll
+  </div>
+</div>
+
+<!-- IMPACT NUMBERS -->
+<div class="impact-bg section-full" id="impact">
+  <div style="max-width:1200px; margin:0 auto;">
+    <p class="section-label">// by the numbers</p>
+    <h2 class="section-title">The impact</h2>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <div class="impact-num">68<span class="accent">+</span></div>
+        <div class="impact-label">Videos produced for STU Football</div>
+        <div class="impact-delta">Aug 2024 – Apr 2026</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">1.85<span class="accent">M</span></div>
+        <div class="impact-label">Total accounts reached since arrival</div>
+        <div class="impact-delta">+34× vs entire 2023</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">2.5<span class="accent">M+</span></div>
+        <div class="impact-label">Total impressions generated</div>
+        <div class="impact-delta">Aug 2024 – Apr 2026</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">7,512</div>
+        <div class="impact-label">Current followers — up from 4,500</div>
+        <div class="impact-delta">+67% growth</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">20<span class="accent">K+</span></div>
+        <div class="impact-label">Reel interactions in latest period</div>
+        <div class="impact-delta">+810% vs before</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">352<span class="accent">K</span></div>
+        <div class="impact-label">Peak single month impressions</div>
+        <div class="impact-delta">Nov 2025 all-time high</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BEFORE / AFTER -->
+<section id="growth">
+  <p class="section-label">// before vs after</p>
+  <h2 class="section-title">One hire.<br>Everything changed.</h2>
+  <div class="ba-wrap">
+    <div class="ba-side ba-before">
+      <div class="ba-badge">BEFORE · FULL YEAR 2023</div>
+      <div class="ba-big">66<span class="ba-unit">K</span></div>
+      <div class="ba-desc">impressions for the entire year</div>
+      <div class="ba-list">
+        <div class="ba-item">
+          <span class="ba-item-label">Accounts reached</span>
+          <span class="ba-item-val">54,133</span>
+        </div>
+        <div class="ba-item">
+          <span class="ba-item-label">Shares all year</span>
+          <span class="ba-item-val">162</span>
+        </div>
+        <div class="ba-item">
+          <span class="ba-item-label">Reel interactions</span>
+          <span class="ba-item-val">~0</span>
+        </div>
+        <div class="ba-item">
+          <span class="ba-item-label">Avg monthly impressions</span>
+          <span class="ba-item-val">~7K</span>
+        </div>
+        <div class="ba-item">
+          <span class="ba-item-label">Followers</span>
+          <span class="ba-item-val">~4,500</span>
+        </div>
+      </div>
+    </div>
+    <div class="ba-side ba-after">
+      <div class="ba-badge">AFTER · 2024 SEASON ALONE</div>
+      <div class="ba-big">987<span class="ba-unit">K</span></div>
+      <div class="ba-desc">impressions in one season</div>
+      <div class="ba-list">
+        <div class="ba-item">
+          <span class="ba-item-label">Accounts reached</span>
+          <span class="ba-item-val">693,362</span>
+        </div>
+        <div class="ba-item">
+          <span class="ba-item-label">Shares</span>
+          <span class="ba-item-val">8,215</span>
+        </div>
+        <div class="ba-item">
+          <span class="ba-item-label">Reel interactions</span>
+          <span class="ba-item-val">20,066+</span>
+        </div>
+        <div class="ba-item">
+          <span class="ba-item-label">Peak month impressions</span>
+          <span class="ba-item-val">331K</span>
+        </div>
+        <div class="ba-item">
+          <span class="ba-item-label">Followers now</span>
+          <span class="ba-item-val">7,512</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHART -->
+<div class="chart-section section-full">
+  <div style="max-width:1200px; margin:0 auto; padding: 0 0;">
+    <p class="section-label">// month by month</p>
+    <h2 class="section-title">Growth in real time</h2>
+    <div class="chart-tabs">
+      <button class="chart-tab active" onclick="switchTab('impressions',this)">Impressions</button>
+      <button class="chart-tab" onclick="switchTab('reach',this)">Reach</button>
+      <button class="chart-tab" onclick="switchTab('shares',this)">Shares</button>
+    </div>
+    <div class="chart-wrap">
+      <canvas id="mainChart" role="img" aria-label="Monthly STU Football metrics from August 2024 to April 2026">Monthly growth data.</canvas>
+    </div>
+  </div>
+</div>
+
+<!-- YEAR OVER YEAR -->
+<section>
+  <p class="section-label">// year over year</p>
+  <h2 class="section-title">The three-year story</h2>
+  <div class="yoy-grid">
+    <div class="yoy-card">
+      <div class="yoy-tag">before</div>
+      <div class="yoy-year">2023</div>
+      <div class="yoy-stat">
+        <div class="yoy-stat-label">Impressions</div>
+        <div class="yoy-stat-val">66,557</div>
+      </div>
+      <div class="yoy-stat">
+        <div class="yoy-stat-label">Reach</div>
+        <div class="yoy-stat-val">55,072</div>
+      </div>
+      <div class="yoy-stat">
+        <div class="yoy-stat-label">Shares</div>
+        <div class="yoy-stat-val">162</div>
+      </div>
+    </div>
+    <div class="yoy-card">
+      <div class="yoy-tag">ZW arrives</div>
+      <div class="yoy-year">2024</div>
+      <div class="yoy-stat">
+        <div class="yoy-stat-label">Impressions</div>
+        <div class="yoy-stat-val">987,318</div>
+      </div>
+      <div class="yoy-stat">
+        <div class="yoy-stat-label">Reach</div>
+        <div class="yoy-stat-val">693,362</div>
+      </div>
+      <div class="yoy-stat">
+        <div class="yoy-stat-label">Shares</div>
+        <div class="yoy-stat-val">8,490</div>
+      </div>
+    </div>
+    <div class="yoy-card">
+      <div class="yoy-tag">sustained</div>
+      <div class="yoy-year">2025</div>
+      <div class="yoy-stat">
+        <div class="yoy-stat-label">Impressions</div>
+        <div class="yoy-stat-val">1,524,281</div>
+      </div>
+      <div class="yoy-stat">
+        <div class="yoy-stat-label">Reach</div>
+        <div class="yoy-stat-val">1,103,526</div>
+      </div>
+      <div class="yoy-stat">
+        <div class="yoy-stat-label">Shares</div>
+        <div class="yoy-stat-val">9,541</div>
+      </div>
+    </div>
+  </div>
+  <div style="position:relative; width:100%; height:280px; margin-top:8px;">
+    <canvas id="yoyChart" role="img" aria-label="Year over year bar chart 2023 2024 2025">Year over year comparison.</canvas>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<div class="impact-bg section-full" id="timeline">
+  <div style="max-width:800px; margin:0 auto;">
+    <p class="section-label">// the journey</p>
+    <h2 class="section-title">Milestone<br>timeline</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">AUG 2023</div>
+        <div class="tl-title">Where it started</div>
+        <div class="tl-desc">STU Football averaging <span class="tl-num">1,930 impressions/month</span>. Purely local, no viral reach, zero Reels strategy.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">NOV 2023</div>
+        <div class="tl-title">First glimpse of potential</div>
+        <div class="tl-desc">Playoff run pushed impressions to <span class="tl-num">38K</span> for one month — then dropped right back down. The ceiling existed, just no one to unlock it.</div>
+      </div>
+      <div class="tl-item highlight">
+        <div class="tl-dot"></div>
+        <div class="tl-date">AUG 2024 — THE TURNING POINT</div>
+        <div class="tl-title">ZW Vizualz joins the program</div>
+        <div class="tl-desc">First month on the job: <span class="tl-num">132K impressions</span>, 94K accounts reached. That single month outperformed the entire previous year.</div>
+      </div>
+      <div class="tl-item peak">
+        <div class="tl-dot"></div>
+        <div class="tl-date">SEP 2024</div>
+        <div class="tl-title">First viral peak</div>
+        <div class="tl-desc"><span class="tl-num">331K impressions</span> and <span class="tl-num">231K accounts reached</span> — 51× the total follower count at the time. Content spreading far beyond the fanbase.</div>
+      </div>
+      <div class="tl-item peak">
+        <div class="tl-dot"></div>
+        <div class="tl-date">OCT 2024</div>
+        <div class="tl-title">Shares explode</div>
+        <div class="tl-desc"><span class="tl-num">4,119 shares</span> in a single month — more than 25× the entire previous year's total of 162. The content is spreading itself.</div>
+      </div>
+      <div class="tl-item peak">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2025 SEASON</div>
+        <div class="tl-title">Growth compounds</div>
+        <div class="tl-desc">The momentum doesn't stop. <span class="tl-num">1.05M impressions</span> in the season alone. Followers climb to <span class="tl-num">7,512</span>. The algorithm is fully on board.</div>
+      </div>
+      <div class="tl-item highlight">
+        <div class="tl-dot"></div>
+        <div class="tl-date">NOV 2025 — ALL-TIME PEAK</div>
+        <div class="tl-title">352K impressions in one month</div>
+        <div class="tl-desc">The program's single biggest month ever. <span class="tl-num">247K accounts reached</span>. What once took a full year now happens in 30 days.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="contact-section" id="contact">
+  <div class="contact-inner">
+    <p class="section-label" style="text-align:center;">// let's work</p>
+    <h2 class="contact-title">READY TO<br>GROW <span class="red">YOUR</span><br>PROGRAM?</h2>
+    <p class="contact-sub">68 videos. 1.85 million people reached. One videographer who shows up and delivers. Let's talk about what I can do for your brand.</p>
+    <div class="contact-btns">
+      <a href="https://instagram.com/z.w_vizualz" target="_blank" class="btn-primary">Instagram @z.w_vizualz →</a>
+      <a href="mailto:your@email.com" class="btn-secondary">Send an email</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div>ZW<span>.</span>Vizualz — STU Athletics Impact Report</div>
+  <div>Aug 2024 – Apr 2026 · @z.w_vizualz</div>
+</footer>
+
 <script>
-const blue = '#185FA5', red = '#E24B4A', dark = '#042C53', gray = '#B4B2A9';
+const blue = '#3A8FE8', red = '#C8102E', redBright = '#E8193A', gray = '#4A5A72';
 
 const months = ['Aug-24','Sep-24','Oct-24','Nov-24','Dec-24','Jan-25','Feb-25','Mar-25','Apr-25','Jun-25','Jul-25','Aug-25','Sep-25','Oct-25','Nov-25','Dec-25','Jan-26','Feb-26','Mar-26','Apr-26'];
 
@@ -198,83 +720,108 @@ const chartData = {
   shares:      [583,2118,4119,1173,222,63,136,382,3006,296,90,279,1717,1096,1741,735,635,78,652,28]
 };
 
-const barColors = months.map(m => {
-  if(m.includes('24')) return blue;
-  if(m.includes('25') || m.includes('26')) return red;
-  return gray;
-});
+const barColors = months.map(m => m.includes('24') ? blue : redBright);
 
 let mainChart;
 function buildMain(metric) {
   if(mainChart) mainChart.destroy();
-  mainChart = new Chart(document.getElementById('mainC'), {
+  mainChart = new Chart(document.getElementById('mainChart'), {
     type: 'bar',
     data: {
       labels: months,
       datasets: [{
-        label: metric,
         data: chartData[metric],
         backgroundColor: barColors,
-        borderRadius: 3
+        borderRadius: 3,
+        borderSkipped: false
       }]
     },
     options: {
       responsive: true, maintainAspectRatio: false,
       plugins: {
-        legend:{display:false},
-        tooltip:{ callbacks:{ label: c=>' '+c.raw.toLocaleString() } }
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#0D1929',
+          borderColor: 'rgba(255,255,255,0.1)',
+          borderWidth: 1,
+          titleColor: '#F5F7FA',
+          bodyColor: '#8A9AB5',
+          callbacks: { label: c => '  ' + c.raw.toLocaleString() }
+        }
       },
       scales: {
-        x:{ ticks:{font:{size:10}, maxRotation:45, autoSkip:false}, grid:{display:false} },
-        y:{ ticks:{font:{size:11}, callback:v=>v>=1000?(v/1000).toFixed(0)+'K':v}, grid:{color:'rgba(128,128,128,0.1)'} }
+        x: {
+          ticks: { color: '#4A5A72', font: { size: 10 }, maxRotation: 45, autoSkip: false },
+          grid: { display: false },
+          border: { color: 'rgba(255,255,255,0.06)' }
+        },
+        y: {
+          ticks: { color: '#4A5A72', font: { size: 11 }, callback: v => v >= 1000 ? (v/1000).toFixed(0)+'K' : v },
+          grid: { color: 'rgba(255,255,255,0.04)' },
+          border: { display: false }
+        }
       }
     }
   });
 }
 
-function switchChart(metric, btn) {
-  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+function switchTab(metric, btn) {
+  document.querySelectorAll('.chart-tab').forEach(t => t.classList.remove('active'));
   btn.classList.add('active');
   buildMain(metric);
 }
 
 buildMain('impressions');
 
-new Chart(document.getElementById('yoyC'), {
+new Chart(document.getElementById('yoyChart'), {
   type: 'bar',
   data: {
-    labels: ['2023\n(before)', '2024\n(ZW arrives)', '2025\n(sustained)'],
+    labels: ['2023 — Before ZW', '2024 — ZW Arrives', '2025 — Sustained'],
     datasets: [
       {
         label: 'Impressions',
         data: [66557, 987318, 1524281],
-        backgroundColor: [gray, blue, red],
-        borderRadius: 4,
-        order: 1
+        backgroundColor: [gray, blue, redBright],
+        borderRadius: 4
       },
       {
         label: 'Reach',
         data: [55072, 693362, 1103526],
-        backgroundColor: [gray+'88', blue+'88', red+'88'],
-        borderRadius: 4,
-        order: 2,
-        borderDash: [4,2]
+        backgroundColor: [gray+'66', blue+'66', redBright+'66'],
+        borderRadius: 4
       }
     ]
   },
   options: {
     responsive: true, maintainAspectRatio: false,
     plugins: {
-      legend:{display:false},
-      tooltip:{
-        mode:'index',
-        callbacks:{ label: c=>' '+c.dataset.label+': '+c.raw.toLocaleString() }
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: '#0D1929',
+        borderColor: 'rgba(255,255,255,0.1)',
+        borderWidth: 1,
+        titleColor: '#F5F7FA',
+        bodyColor: '#8A9AB5',
+        mode: 'index',
+        callbacks: { label: c => '  ' + c.dataset.label + ': ' + c.raw.toLocaleString() }
       }
     },
     scales: {
-      x:{ticks:{font:{size:12}}, grid:{display:false}},
-      y:{ticks:{font:{size:11}, callback:v=>v>=1000000?(v/1000000).toFixed(1)+'M':v>=1000?(v/1000).toFixed(0)+'K':v}, grid:{color:'rgba(128,128,128,0.1)'}}
+      x: { ticks: { color: '#4A5A72', font: { size: 12 } }, grid: { display: false }, border: { color: 'rgba(255,255,255,0.06)' } },
+      y: { ticks: { color: '#4A5A72', font: { size: 11 }, callback: v => v >= 1000000 ? (v/1000000).toFixed(1)+'M' : v >= 1000 ? (v/1000).toFixed(0)+'K' : v }, grid: { color: 'rgba(255,255,255,0.04)' }, border: { display: false } }
     }
   }
 });
+
+const tlItems = document.querySelectorAll('.tl-item');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach((e, i) => {
+    if(e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 100);
+    }
+  });
+}, { threshold: 0.2 });
+tlItems.forEach(el => observer.observe(el));
 </script>
+</body>
+</html>
