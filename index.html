@@ -1,0 +1,280 @@
+
+<h2 class="sr-only">ZW Vizualz impact dashboard for STU Football showing 68 videos produced from August 2024 to 2026 driving 1.85 million accounts reached and massive engagement growth.</h2>
+
+<style>
+  * { box-sizing: border-box; }
+  .header { background: #042C53; border-radius: var(--border-radius-lg); padding: 24px 20px 20px; margin-bottom: 16px; }
+  .header-top { display: flex; align-items: center; gap: 14px; margin-bottom: 6px; }
+  .avatar { width: 48px; height: 48px; border-radius: 50%; background: #E24B4A; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 500; color: #FCEBEB; flex-shrink: 0; }
+  .header-name { font-size: 20px; font-weight: 500; color: #E6F1FB; margin: 0; }
+  .header-handle { font-size: 13px; color: #85B7EB; margin: 2px 0 0; }
+  .header-tag { display: inline-block; background: #E24B4A; color: #FCEBEB; font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: var(--border-radius-md); margin-top: 10px; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 16px; }
+  .kpi { border-radius: var(--border-radius-md); padding: 12px 14px; }
+  .kpi-blue { background: #E6F1FB; }
+  .kpi-red { background: #FCEBEB; }
+  .kpi-dark { background: #042C53; }
+  .kpi-label { font-size: 11px; margin-bottom: 4px; }
+  .kpi-blue .kpi-label { color: #185FA5; }
+  .kpi-red .kpi-label { color: #A32D2D; }
+  .kpi-dark .kpi-label { color: #85B7EB; }
+  .kpi-value { font-size: 24px; font-weight: 500; }
+  .kpi-blue .kpi-value { color: #042C53; }
+  .kpi-red .kpi-value { color: #501313; }
+  .kpi-dark .kpi-value { color: #E6F1FB; }
+  .kpi-sub { font-size: 11px; margin-top: 2px; }
+  .kpi-blue .kpi-sub { color: #185FA5; }
+  .kpi-red .kpi-sub { color: #A32D2D; }
+  .kpi-dark .kpi-sub { color: #85B7EB; }
+  .section { margin-bottom: 1.5rem; }
+  .section-title { font-size: 12px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+  .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 1.2rem 0; }
+  .before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 1rem; }
+  .ba-card { border-radius: var(--border-radius-md); padding: 12px 14px; }
+  .ba-before { background: #D3D1C7; }
+  .ba-after { background: #042C53; }
+  .ba-label { font-size: 11px; font-weight: 500; margin-bottom: 8px; }
+  .ba-before .ba-label { color: #444441; }
+  .ba-after .ba-label { color: #85B7EB; }
+  .ba-stat { font-size: 13px; margin: 4px 0; }
+  .ba-before .ba-stat { color: #2C2C2A; }
+  .ba-after .ba-stat { color: #B5D4F4; }
+  .ba-big { font-size: 22px; font-weight: 500; }
+  .ba-before .ba-big { color: #444441; }
+  .ba-after .ba-big { color: #E6F1FB; }
+  .milestone { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 0.5px solid var(--color-border-tertiary); }
+  .milestone:last-child { border-bottom: none; }
+  .milestone-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+  .milestone-date { font-size: 12px; color: var(--color-text-secondary); min-width: 70px; }
+  .milestone-text { font-size: 13px; color: var(--color-text-primary); }
+  .milestone-num { font-size: 13px; font-weight: 500; }
+  .tab-row { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .tab { padding: 5px 12px; font-size: 13px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-secondary); background: transparent; color: var(--color-text-secondary); cursor: pointer; }
+  .tab.active { background: #042C53; color: #E6F1FB; border-color: #042C53; font-weight: 500; }
+  @media(max-width:480px){ .before-after { grid-template-columns: 1fr; } }
+</style>
+
+<div style="padding:0.5rem 0;">
+
+<div class="header">
+  <div class="header-top">
+    <div class="avatar">ZW</div>
+    <div>
+      <p class="header-name">ZW Vizualz</p>
+      <p class="header-handle">@z.w_vizualz</p>
+    </div>
+  </div>
+  <div class="header-tag">STU Football — Impact Report · Aug 2024 – Apr 2026</div>
+</div>
+
+<div class="kpi-grid">
+  <div class="kpi kpi-red">
+    <div class="kpi-label">Videos produced</div>
+    <div class="kpi-value">68</div>
+    <div class="kpi-sub">Football Reels</div>
+  </div>
+  <div class="kpi kpi-blue">
+    <div class="kpi-label">Accounts reached</div>
+    <div class="kpi-value">1.85M</div>
+    <div class="kpi-sub">since Aug 2024</div>
+  </div>
+  <div class="kpi kpi-dark">
+    <div class="kpi-label">Impressions generated</div>
+    <div class="kpi-value">2.5M+</div>
+    <div class="kpi-sub">Aug 2024 – Apr 2026</div>
+  </div>
+  <div class="kpi kpi-red">
+    <div class="kpi-label">Follower growth</div>
+    <div class="kpi-value">+67%</div>
+    <div class="kpi-sub">4,500 → 7,512</div>
+  </div>
+  <div class="kpi kpi-blue">
+    <div class="kpi-label">Reel interactions</div>
+    <div class="kpi-value">20K+</div>
+    <div class="kpi-sub">+810% vs before</div>
+  </div>
+  <div class="kpi kpi-dark">
+    <div class="kpi-label">Peak month reach</div>
+    <div class="kpi-value">247K</div>
+    <div class="kpi-sub">Nov 2025</div>
+  </div>
+</div>
+
+<hr class="divider">
+<div class="section">
+  <div class="section-title">Before vs after — ZW Vizualz joins Aug 2024</div>
+  <div class="before-after">
+    <div class="ba-card ba-before">
+      <div class="ba-label">Before (full year 2023)</div>
+      <div class="ba-big">66K</div>
+      <div class="ba-stat">total impressions</div>
+      <div class="ba-stat">54K accounts reached</div>
+      <div class="ba-stat">~0 reel interactions</div>
+      <div class="ba-stat">162 shares all year</div>
+    </div>
+    <div class="ba-card ba-after">
+      <div class="ba-label">After (2024 season alone)</div>
+      <div class="ba-big" style="color:#E24B4A;">987K</div>
+      <div class="ba-stat">total impressions</div>
+      <div class="ba-stat">693K accounts reached</div>
+      <div class="ba-stat">8,215 shares</div>
+      <div class="ba-stat">14.7× growth in one year</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+<div class="section">
+  <div class="section-title">Monthly impressions — the ZW Vizualz era</div>
+  <div class="tab-row">
+    <button class="tab active" onclick="switchChart('impressions', this)">Impressions</button>
+    <button class="tab" onclick="switchChart('reach', this)">Reach</button>
+    <button class="tab" onclick="switchChart('shares', this)">Shares</button>
+  </div>
+  <div style="position:relative;width:100%;height:300px;">
+    <canvas id="mainC" role="img" aria-label="Monthly STU Football metrics from August 2024 to April 2026 showing sustained high performance driven by ZW Vizualz video content">Monthly metrics Aug 2024 to Apr 2026.</canvas>
+  </div>
+</div>
+
+<hr class="divider">
+<div class="section">
+  <div class="section-title">Year-over-year — the full picture</div>
+  <div style="position:relative;width:100%;height:240px;">
+    <canvas id="yoyC" role="img" aria-label="Year over year impressions and reach for STU Football 2023 2024 2025">Year over year comparison.</canvas>
+  </div>
+</div>
+
+<hr class="divider">
+<div class="section">
+  <div class="section-title">Growth milestones</div>
+  <div class="milestone">
+    <div class="milestone-dot" style="background:#B4B2A9;"></div>
+    <div class="milestone-date">Aug 2023</div>
+    <div class="milestone-text">Account averaging <span class="milestone-num">1.9K impressions/month</span> — purely local following</div>
+  </div>
+  <div class="milestone">
+    <div class="milestone-dot" style="background:#B4B2A9;"></div>
+    <div class="milestone-date">Nov 2023</div>
+    <div class="milestone-text">First spike — playoff run pushes to <span class="milestone-num">38K impressions</span>, but doesn't sustain</div>
+  </div>
+  <div class="milestone">
+    <div class="milestone-dot" style="background:#E24B4A;"></div>
+    <div class="milestone-date">Aug 2024</div>
+    <div class="milestone-text" style="font-weight:500;">ZW Vizualz arrives — first month hits <span class="milestone-num" style="color:#E24B4A;">132K impressions</span> and 94K accounts reached</div>
+  </div>
+  <div class="milestone">
+    <div class="milestone-dot" style="background:#185FA5;"></div>
+    <div class="milestone-date">Sep 2024</div>
+    <div class="milestone-text">Peak single month — <span class="milestone-num">331K impressions</span>, 231K accounts reached</div>
+  </div>
+  <div class="milestone">
+    <div class="milestone-dot" style="background:#185FA5;"></div>
+    <div class="milestone-date">Oct 2024</div>
+    <div class="milestone-text">Shares explode — <span class="milestone-num">4,119 shares</span> in one month vs 162 all of 2023</div>
+  </div>
+  <div class="milestone">
+    <div class="milestone-dot" style="background:#185FA5;"></div>
+    <div class="milestone-date">2025 season</div>
+    <div class="milestone-text">Growth sustains and compounds — <span class="milestone-num">1.05M impressions</span> in season alone, followers hit 7,512</div>
+  </div>
+  <div class="milestone">
+    <div class="milestone-dot" style="background:#0F6E56;"></div>
+    <div class="milestone-date">Nov 2025</div>
+    <div class="milestone-text">All-time peak — <span class="milestone-num">352K impressions</span> and 247K accounts reached in a single month</div>
+  </div>
+</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const blue = '#185FA5', red = '#E24B4A', dark = '#042C53', gray = '#B4B2A9';
+
+const months = ['Aug-24','Sep-24','Oct-24','Nov-24','Dec-24','Jan-25','Feb-25','Mar-25','Apr-25','Jun-25','Jul-25','Aug-25','Sep-25','Oct-25','Nov-25','Dec-25','Jan-26','Feb-26','Mar-26','Apr-26'];
+
+const chartData = {
+  impressions: [132028,331363,227393,214697,55309,13570,44607,75236,299757,18283,20674,74684,306288,195912,352328,122942,18848,15499,48465,8196],
+  reach:       [94454,231333,160484,151404,39821,8969,32814,55578,202963,14497,16665,54276,233533,148121,247295,88815,13895,11464,37055,6824],
+  shares:      [583,2118,4119,1173,222,63,136,382,3006,296,90,279,1717,1096,1741,735,635,78,652,28]
+};
+
+const barColors = months.map(m => {
+  if(m.includes('24')) return blue;
+  if(m.includes('25') || m.includes('26')) return red;
+  return gray;
+});
+
+let mainChart;
+function buildMain(metric) {
+  if(mainChart) mainChart.destroy();
+  mainChart = new Chart(document.getElementById('mainC'), {
+    type: 'bar',
+    data: {
+      labels: months,
+      datasets: [{
+        label: metric,
+        data: chartData[metric],
+        backgroundColor: barColors,
+        borderRadius: 3
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend:{display:false},
+        tooltip:{ callbacks:{ label: c=>' '+c.raw.toLocaleString() } }
+      },
+      scales: {
+        x:{ ticks:{font:{size:10}, maxRotation:45, autoSkip:false}, grid:{display:false} },
+        y:{ ticks:{font:{size:11}, callback:v=>v>=1000?(v/1000).toFixed(0)+'K':v}, grid:{color:'rgba(128,128,128,0.1)'} }
+      }
+    }
+  });
+}
+
+function switchChart(metric, btn) {
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  buildMain(metric);
+}
+
+buildMain('impressions');
+
+new Chart(document.getElementById('yoyC'), {
+  type: 'bar',
+  data: {
+    labels: ['2023\n(before)', '2024\n(ZW arrives)', '2025\n(sustained)'],
+    datasets: [
+      {
+        label: 'Impressions',
+        data: [66557, 987318, 1524281],
+        backgroundColor: [gray, blue, red],
+        borderRadius: 4,
+        order: 1
+      },
+      {
+        label: 'Reach',
+        data: [55072, 693362, 1103526],
+        backgroundColor: [gray+'88', blue+'88', red+'88'],
+        borderRadius: 4,
+        order: 2,
+        borderDash: [4,2]
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend:{display:false},
+      tooltip:{
+        mode:'index',
+        callbacks:{ label: c=>' '+c.dataset.label+': '+c.raw.toLocaleString() }
+      }
+    },
+    scales: {
+      x:{ticks:{font:{size:12}}, grid:{display:false}},
+      y:{ticks:{font:{size:11}, callback:v=>v>=1000000?(v/1000000).toFixed(1)+'M':v>=1000?(v/1000).toFixed(0)+'K':v}, grid:{color:'rgba(128,128,128,0.1)'}}
+    }
+  }
+});
+</script>
